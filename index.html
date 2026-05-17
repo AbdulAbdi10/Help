@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Services Help Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-card">
+      <div class="hero-content">
+        <span class="eyebrow">Community Support</span>
+        <h1>How can we help you today?</h1>
+        <p>
+          Select the type of support you need, and we will guide you to the next step.
+          For emergencies or immediate danger, call <strong>911</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="service-card" aria-labelledby="service-title">
+      <div class="section-header">
+        <h2 id="service-title">Choose a service</h2>
+        <p>Tap one option below.</p>
+      </div>
+
+      <div class="services-grid">
+        <button class="service-option" data-service="housing">
+          <span class="service-icon">🏠</span>
+          <span>Housing Help</span>
+        </button>
+
+        <button class="service-option" data-service="mentalHealth">
+          <span class="service-icon">💙</span>
+          <span>Mental Health</span>
+        </button>
+
+        <button class="service-option" data-service="food">
+          <span class="service-icon">🥘</span>
+          <span>Food Support</span>
+        </button>
+
+        <button class="service-option" data-service="shelter">
+          <span class="service-icon">🛏️</span>
+          <span>Shelter Tonight</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="result" class="result-card hidden" aria-live="polite">
+      <div class="result-icon" id="resultIcon"></div>
+      <div>
+        <h2 id="resultTitle"></h2>
+        <p id="resultDescription"></p>
+
+        <div class="action-box">
+          <p id="resultAction"></p>
+          <a id="resultLink" class="primary-button" href="#" target="_blank" rel="noopener">Get help now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-card">
+      <h2>Need urgent help?</h2>
+      <p>
+        If this is a medical, safety, or life-threatening emergency, call <strong>911</strong>.
+        For mental health crisis support, call or text <strong>988</strong>.
+      </p>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
